@@ -1,0 +1,179 @@
+html {
+    background-color: rgb(70, 70, 70);
+    margin: 0;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+.nav , .friends
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.nav{background-color: rgb(38, 38, 41);}
+.friends{background-color: rgb(51, 51, 59);}
+#logo , .server
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    background-image: url("https://placehold.co/80x80");
+    cursor: pointer;
+}
+.server{background-position: -12px -15px;}
+@keyframes server-anim {
+    to{border-radius: 15px;}
+}
+.server:hover{
+    animation: server-anim 0.3s;
+    /*pause animation when its finished*/
+    animation-fill-mode: forwards;
+}
+
+
+#logo 
+{
+    background-image: url("discord.png");
+    background-size: 50px;
+}
+.friends
+{
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 50px;
+
+}
+input
+{
+    font-size: 12px;
+    font-weight: 700;
+    width: 180px;
+    height: 25px;
+    margin-right: 10px;
+    padding-left: 8px;
+    background-color: hsl(60, 7%, 14%);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+.friends-btn , .nitro-btn {
+    width: 90%;
+    height: 30px;
+    background-color: rgb(51, 51, 59);
+    color: rgb(200,200,200);
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+
+    display: flex;
+    line-height: 30px;
+
+    
+
+}
+
+.friends-btn:hover , .nitro-btn:hover 
+{
+    filter: brightness(150%);
+}
+.btn-icon-friends , .btn-icon-nitro {
+    width: 30px;
+    height: 30px;
+    background-color:transparent;
+    color: rgb(200,200,200);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+
+
+.dms-title
+{
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-left: 5px;
+    line-height: 30px;
+    color: rgb(172, 172, 172);
+}
+.plus-icon
+{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    padding-right: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.dm
+{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(51, 51, 59);
+    color: rgb(200,200,200);
+    border: none;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+{
+    filter: brightness(150%);
+}
+.pfp
+{
+    background-color: rgb(167, 65, 65);
+    width: 35px;
+    height: 35px;
+    background-image: url("https://placehold.co/600x400");
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+
+
+#n2
+{
+    background-color: rgba(0, 0, 0, 0.459);
+    width:  100%;
+    height: 1px;
+    border: 0;
+
+
+    margin: 10px 0px;
+    position: relative;
+}
+#n1
+{
+    background-color: rgba(113, 116, 116, 0.459);
+    width: 35px;
+    height: 2px;
+    border: 0;
+    margin-left: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html
+{
+    font-family: 'Roboto', sans-serif;
+}
